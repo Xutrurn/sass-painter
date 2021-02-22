@@ -1,0 +1,17 @@
+// @mixin container {
+//   width: $larghezzaDesktop;
+//   margin: 0 auto;
+//   background-color: green;
+// }
+@mixin container2 {
+  .container {
+    width: $larghezzaDesktop;
+    margin: 0 auto;
+  }
+}
+
+@mixin flex($justify:flex-start, $align:center){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}

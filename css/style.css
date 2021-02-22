@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100px;
+  background-color: #000;
+}
+header .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .header-top {
+  height: 45px;
+}
+header .header-top nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+header .header-top nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header-top nav ul li {
+  padding-right: 20px;
+}
+header .header-top nav ul li a {
+  color: lightgrey;
+}
+header .header-top nav ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+header .header-bottom {
+  height: calc(100px - 45px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-bottom .logo img {
+  width: 90px;
+  margin: 20px;
+}
+
+nav.navbar {
+  height: 100%;
+}
+nav.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.navbar ul li {
+  padding: 20px;
+  margin-right: 20px;
+}
+nav.navbar ul li a {
+  color: #fff;
+}
+nav.navbar ul li:hover {
+  background-color: #fff;
+}
+nav.navbar ul li:hover a {
+  color: #000;
+}
+
+li.parent-dropdown {
+  position: relative;
+}
+li.parent-dropdown .dropdown {
+  position: absolute;
+  top: calc(100px - 45px);
+  left: 0;
+  width: 300px;
+  background-color: #fff;
+  display: none;
+}
+li.parent-dropdown .dropdown ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+li.parent-dropdown .dropdown ul li.dropdown-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+li.parent-dropdown .dropdown ul li.dropdown-link:hover {
+  background-color: grey;
+}
+li.parent-dropdown:hover .dropdown {
+  display: block;
+}
+
+main {
+  background-image: url("../img/bg-painter-home.jpg");
+  height: 600px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
