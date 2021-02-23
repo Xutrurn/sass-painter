@@ -3,12 +3,25 @@ $colorBlack: #000;
 $navTop: lightgrey;
 $colorWhite: #fff;
 $grigio: grey;
+$navHover: #eee;
+$blueColor: #009CFF;
+$blackBg: #222;
+$footerTopColor: #ececec;
+$footerBottomColor: #1e1e1e;
+$footerLink: #999;
+
+$instagramBg: #E4405F;
+$facebookBg: #3B5998;
+$twitterBg: #1DA1F2;
+$youtubeBg: #CD201F;
+$pinterestBg: #BD081C;
+$rssBg: #ff8d00;
 
 //altezze e larghezza
 $altezzaHeader: 100px;
 $altezzaHeaderTop: 45px;
 $altezzaHeaderBottom: calc(#{$altezzaHeader} - #{$altezzaHeaderTop});
-$larghezzaDesktop: 1200px;
+$larghezzaDesktop: 1170px;
 
 //padding e margin
 $padding-10: 10px;

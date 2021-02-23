@@ -28,6 +28,12 @@ header {
 
               a {}
             }
+
+            i {
+              margin-right: 10px;
+              font-size: 14px;
+              color: $blueColor;
+            }
           }
         }
       }
@@ -40,8 +46,7 @@ header {
 
     .logo img {
       width: 90px;
-      margin: 20px;
-      margin-left: 0;
+      margin: 20px 20px 20px 0;
     }
   }
 }

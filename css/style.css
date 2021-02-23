@@ -2,6 +2,41 @@ body {
   font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.btn-desk {
+  display: block;
+  line-height: 1.5;
+  width: 95%;
+  margin: 0;
+}
+
+.btn-black {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+  font-size: 20px;
+  padding: 5px 30px 8px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.btn-black:hover {
+  background: #333;
+}
+
+.btn-white {
+  background: transparent;
+  color: #000;
+  border: 2px solid #000;
+  font-size: 20px;
+  padding: 5px 30px 8px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  min-width: 150px;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,12 +55,43 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  max-width: 1170px;
+  height: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.instagram {
+  background-color: #E4405F;
+}
+
+.facebook {
+  background-color: #3B5998;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.youtube {
+  background-color: #CD201F;
+}
+
+.pinterest {
+  background-color: #BD081C;
+}
+
+.rss {
+  background-color: #ff8d00;
+}
+
 header {
   height: 100px;
   background-color: #000;
 }
 header .container {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
 }
 header .header-top {
@@ -52,6 +118,11 @@ header .header-top nav ul li a:hover {
   color: #fff;
   text-decoration: underline;
 }
+header .header-top nav ul li a i {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #009CFF;
+}
 header .header-bottom {
   height: calc(100px - 45px);
   display: flex;
@@ -60,8 +131,7 @@ header .header-bottom {
 }
 header .header-bottom .logo img {
   width: 90px;
-  margin: 20px;
-  margin-left: 0;
+  margin: 20px 20px 20px 0;
 }
 
 nav.navbar {
@@ -125,7 +195,7 @@ main {
 }
 
 .container {
-  width: 1200px;
+  width: 1170px;
   margin: 0 auto;
 }
 
@@ -178,13 +248,96 @@ main {
 }
 
 .purple-p-title {
-  font-weight: 600 !important;
+  font-weight: 600;
   font-size: 80%;
   display: block;
+  font-style: italic;
 }
 
 .purple-p-save {
   font-weight: 400;
   font-size: 80%;
   display: block;
+  font-style: italic;
+}
+
+.footer-top {
+  padding: 60px 0 30px;
+  background-color: #ececec;
+}
+.footer-top .wrapper {
+  display: flex;
+}
+.footer-top .wrapper .col {
+  width: calc(100% / 4);
+}
+.footer-top .wrapper .col > ul {
+  list-style: none;
+}
+.footer-top .wrapper .col > ul > li h5 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.footer-top .wrapper .col > ul > li a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000;
+}
+.footer-top .wrapper .col > ul > li a:hover {
+  text-decoration: underline;
+}
+.footer-top .wrapper .col > ul .social-icons {
+  margin-top: 30px;
+}
+.footer-top .wrapper .col > ul .social-icons ul {
+  display: flex;
+}
+.footer-top .wrapper .col > ul .social-icons ul li {
+  margin-right: 10px;
+}
+.footer-top .wrapper .col > ul .social-icons ul li .icon-bg {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.footer-top .wrapper .col > ul .social-icons ul li .icon-bg a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  padding: 15px 0;
+  background-color: #1e1e1e;
+}
+.footer-bottom .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom .wrapper .bottom-left {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom .wrapper .bottom-left img {
+  margin-right: 30px;
+}
+.footer-bottom .wrapper .bottom-right ul {
+  display: flex;
+  font-size: 12px;
+}
+.footer-bottom .wrapper .bottom-right ul li {
+  margin-left: 20px;
+}
+.footer-bottom .wrapper .bottom-right ul li a {
+  text-decoration: none;
+  color: #999;
+}
+.footer-bottom .wrapper .bottom-right ul li a:hover {
+  text-decoration: underline;
+}
+.footer-bottom .wrapper .bottom-right ul .copyright {
+  color: #fff;
 }
